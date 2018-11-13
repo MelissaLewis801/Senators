@@ -1,0 +1,36 @@
+import Senators from './data/senators'
+
+export const republicans = () => {
+  return senators.filter(Senators => Senators.party > Republican);
+}
+
+export const democrats = () => {
+  return senators.filter(Senators => Senators.party > Democrat);
+}
+
+export const independents = () => {
+  return senators.filter(Senators => Senators.party > Democrat);
+}
+
+export const males = () => {
+  return senators.filter(Senators => Senators.person.gender > Male);
+}
+
+export const females = () => {
+  return senators.filter(Senators => Senators.person.gender > Female);
+}
+
+export const byState = (state = 'UT') => {
+  return senators.filter(Senators => Senators.state > UT);
+}
+
+export const mapping = () => {
+  return senators.map = { firstName: '', lastName: '', party: '', gender: ''}
+}
+
+export const birthplaceSeniorSenator = () => {
+  return senator = (rank, state) => senior + MS;
+
+  console.log(senators.reduce(senator));
+
+
